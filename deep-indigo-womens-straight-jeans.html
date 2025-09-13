@@ -15,6 +15,23 @@
             <a href="#">Men</a>
         </div>
         <div class="logo">SIDDHARTH</div>
+        <style>
+            .logo a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000; /* black background */
+  color: #fff; /* white text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logo a:hover {
+  background-color: #444; /* slightly lighter on hover */
+}
+        </style>
         <div class="top-right">
             <div class="search-box">
             <input type="text" placeholder="What are you looking for?" />
@@ -42,14 +59,14 @@
         <a href="#">Support</a>
         </nav>
   </header>
-
+<div class="product-container">
 <div class="gallery">
   <div class="thumbnails">
     <img src="https://freakins.com/cdn/shop/files/SAR05182.jpg?v=1751954429&width=700" alt="Thumbnail 1" class="active" onclick="changeImage(this)">
     <img src="https://freakins.com/cdn/shop/files/SAR05116.jpg?v=1751954429&width=400" alt="Thumbnail 2" onclick="changeImage(this)">
-    <img src="https://freakins.com/cdn/shop/files/SAR01840_09b38e87-c727-4f0c-bfeb-6386b442a275.jpg?v=1752738231&width=400" alt="Thumbnail 3" onclick="changeImage(this)">
-    <img src="https://freakins.com/cdn/shop/files/SAR06928.jpg?v=1751031844&width=400" alt="Thumbnail 4" onclick="changeImage(this)">
-    <img src="https://freakins.com/cdn/shop/files/SAR06469_300f9a31-3f61-4f16-b8f7-9831dda9f852.jpg?v=1752069447&width=400" alt="Thumbnail 5" onclick="changeImage(this)">
+    <img src="https://freakins.com/cdn/shop/files/SAR05161.jpg?v=1753767753&width=700" alt="Thumbnail 3" onclick="changeImage(this)">
+    <img src="https://freakins.com/cdn/shop/files/SAR05166.jpg?v=1753767753&width=700" alt="Thumbnail 4" onclick="changeImage(this)">
+    <img src="https://freakins.com/cdn/shop/files/SAR05186.jpg?v=1753767753&width=700" alt="Thumbnail 5" onclick="changeImage(this)">
   </div>
 
   <div class="primary-image">
@@ -57,6 +74,47 @@
   </div>
 </div>
 
+<style>
+  .product-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
 
+  .product-gallery {
+    flex: 0 0 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-gallery img {
+    width: 100%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Add your existing product details styles here */
+</style>
+  <div class="product-details">
+    <h1><bold>Deep Indigo Women's Straight Jeans</bold></h1>
+    <p>⭐⭐⭐⭐⭐ 1 review</p>
+    <p>SKU: <bold>FKEN102508-32</bold></p>
+    <p><strong>₹1,699</strong></p>
+    <!-- Add size options, buttons, offers, availability, etc -->
+  </div>
+</div>
+
+
+
+
+<script src="product.js"></script>
 </body>
 </html>
