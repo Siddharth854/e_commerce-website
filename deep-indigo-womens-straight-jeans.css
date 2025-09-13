@@ -1,0 +1,57 @@
+
+ .path p {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  .path a {
+    display: block;      /* makes the link on its own line */
+    background: none;
+    border: none;
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0;
+    margin-bottom: 5px;  /* space between Home and product name */
+  }
+
+  .path a:hover {
+    color: #555;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .thumbnails img {
+    width: 80px;
+    height: 110px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+
+  .thumbnails img.active {
+    border-color: #000;
+  }
+
+  .primary-image img {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  

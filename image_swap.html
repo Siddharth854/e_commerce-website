@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Hover Effect</title>
+    <link rel="stylesheet" href="index.css">
+
+<script>
+  window.onload = function () {
+    const bannerImages = [
+      "https://freakins.com/cdn/shop/files/4_6fd4f13d-8b77-4033-8031-32c839ae93d0.jpg?v=1755846278",
+      "https://freakins.com/cdn/shop/files/3_dddc1ede-1a26-4bfb-97b2-6c4659357436.jpg?v=1755846278",
+      "https://freakins.com/cdn/shop/files/5_1fa4c941-4e4d-48b9-aa13-3b34d612299b.jpg?v=1755846279",
+    ];
+
+    let currentIndex = 0;
+    const bannerImg = document.getElementById("bannerImage");
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % bannerImages.length;
+      bannerImg.src = bannerImages[currentIndex];
+    }, 3000);
+  };
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="top-header">
+      <div class="top-left">
+        <a href="#" class="active">Women</a>
+        <a href="#">Men</a>
+      </div>
+      <div class="logo">SIDDHARTH</div>
+      <div class="top-right">
+        <div class="search-box">
+          <input type="text" placeholder="What are you looking for?" />
+          <button aria-label="Search">🔍</button>
+        </div>
+        <div class="icon" title="Account">⚡</div>
+        <div class="icon" title="Cart">🛒<sup>0</sup></div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#">New Arrivals</a>
+      <a href="#">Bestsellers</a>
+      <a href="#">SPECIAL PRICES</a>
+      <a href="#">Jeans</a>
+      <a href="#">Categories</a>
+      <a href="#">Shorts, Skorts & Skirts</a>
+      <a href="#">Siddharth's Special</a>
+      <a href="#">Korean Pants & Trousers</a>
+      <a href="#">Curve</a>
+      <a href="#">Topwear</a>
+      <a href="#">Cargo</a>
+      <a href="#">Influencer Collab</a>
+      <a href="#">Store Locator</a>
+      <a href="#">Support</a>
+    </nav>
+  </header>
+<!-- Banner Slideshow -->
+<div class="banner-slider">
+  <img id="bannerImage" src="https://freakins.com/cdn/shop/files/4_6fd4f13d-8b77-4033-8031-32c839ae93d0.jpg?v=1755846278" alt="Banner Image">
+</div>
+
+<br>
+<br> <div class="collab"><h1>Our Collections</h1></div>
+<br>
+<br>
+
+<div class="image-row">
+
+<div class="image-container" onclick="window.location.href='deep-indigo-womens-straight-jeans.html'">
+  <img src="https://freakins.com/cdn/shop/files/SAR05116.jpg?v=1751954429&width=400" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/files/SAR05182.jpg?v=1751954429&width=400" alt="Hover Image" class="hover-image">
+</div>
+
+
+
+  <div class="image-container" onclick="window.location.href='https://freakins.com/products/khaki-tie-up-womens-straight-jeans'">
+  <img src="https://freakins.com/cdn/shop/files/SAR01840_09b38e87-c727-4f0c-bfeb-6386b442a275.jpg?v=1752738231&width=400" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/files/SAR01837_7a7a1f3f-b31e-455a-97d6-090ae5f686be.jpg?v=1752738231&width=400" alt="Hover Image" class="hover-image">
+</div>
+
+<div class="image-container" onclick="window.location.href=https://freakins.com/products/jet-black-womens-cargo-denim-skirt'">
+  <img src="https://freakins.com/cdn/shop/files/SAR06928.jpg?v=1751031844&width=700" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/files/SAR06954_f880361f-dd34-436f-8b6d-fb9e3f96dfcd.jpg?v=1751031961&width=700" alt="Hover Image" class="hover-image">
+</div>
+
+<div class="image-container" onclick="window.location.href='https://freakins.com/products/blue-pleated-waist-tie-womens-korean-pants'">
+  <img src="https://freakins.com/cdn/shop/files/SAR06469_300f9a31-3f61-4f16-b8f7-9831dda9f852.jpg?v=1752069447&width=700" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/files/SAR06478_ddb4b7e4-02e3-467c-9dee-93538ca3c768.jpg?v=1752069447&width=700" alt="Hover Image" class="hover-image">
+</div>
+
+<div class="image-container" onclick="window.location.href='https://freakins.com/products/euphoria-denim-top'">
+  <img src="https://freakins.com/cdn/shop/products/MyFreakins01917-Edit.jpg?v=1749908237&width=700" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/products/MyFreakins01929-Edit.jpg?v=1749908238&width=700" alt="Hover Image" class="hover-image">
+</div>
+<script>
+    function toggleBuyNow(container) {
+  container.classList.toggle('show-buy-now');
+}
+
+</script>
+
+</div>
+
+<br><br><br><br>
+
+<div class="collab"><h1>SEE WHAT'S TRENDING</h1></div>
+<br><br>
+
+<div class="video-row">
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="https://freakins.com/cdn/shop/files/quinn_d2u93q2yzh6rk1vrdvwmiemr.mp4#t=0.1" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="https://freakins.com/cdn/shop/files/quinn_bhwp762cmpnvc2ht3d5nsozl.mp4#t=0.1" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="https://freakins.com/cdn/shop/files/quinn_obglzk4fsbhdmhek40ah7xkz.mp4#t=0.1" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="https://freakins.com/cdn/shop/files/quinn_fu4xd1q3b8f5qp4x47grrqu1.mp4#t=0.1" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="https://freakins.com/cdn/shop/files/quinn_tu2crb7q72i1jvmo7kbh6caj.mp4#t=0.1" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="  https://freakins.com/cdn/shop/files/quinn_hel67381en04fs91odzdtwdl.mp4#t=0.1" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<div class="image-slider">
+  <img src="https://freakins.com/cdn/shop/files/14_8ac72e97-9b2a-451c-b30d-350e94c9e48d.jpg?v=1756471960" class="active" alt="Image 1" />
+  <img src="https://freakins.com/cdn/shop/files/13_6388c9a8-4207-4663-92da-584c12b9694e.jpg?v=1756471960" alt="Image 2" />
+</div>
+
+<script>
+  const images = document.querySelectorAll('.image-slider img');
+  let currentIndex = 0;
+
+  setInterval(() => {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+  }, 3000);
+</script>
+
+<br><br>
+
+<div class="toggle-buttons">
+  <button class="toggle-button active">DRESSES</button>
+  <button class="toggle-button">TOPS</button>
+</div>
+
+<br><br>
+
+<div class="image-row">
+<div class="image-container" onclick="window.location.href='https://freakins.com/products/cut-out-indigo-dress'">
+  <img src="https://freakins.com/cdn/shop/files/UB02739-Edit-Edit_74264058-df12-4b03-95ef-efc75f075292.jpg?v=1749907934&width=700" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/files/UB02649-Edit.jpg?v=1749907934&width=700" alt="Hover Image" class="hover-image">
+</div>
+
+<div class="image-container" onclick="window.location.href='https://freakins.com/products/product-url-2'">
+  <img src="https://freakins.com/cdn/shop/files/DNV02194-Edit.jpg?v=1749907700&width=700" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/files/DressesDSC05117.jpg?v=1749907700&width=700" alt="Hover Image" class="hover-image">
+</div>
+
+<div class="image-container" onclick="window.location.href='https://freakins.com/products/product-url-3'">
+  <img src="https://freakins.com/cdn/shop/files/12julypart2_18858-Edit.jpg?v=1750058800&width=700" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/files/DNV01776_408b0ac3-6850-470e-a062-e3ab49a8097b.jpg?v=1750058801&width=700" alt="Hover Image" class="hover-image">
+</div>
+
+<div class="image-container" onclick="window.location.href='https://freakins.com/products/product-url-4'">
+  <img src="https://freakins.com/cdn/shop/files/DSC05569-Edit.jpg?v=1750058430&width=700" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/files/7_7fec732d-8c8a-4b83-a933-5b31eb64f82a.jpg?v=1750058431&width=700" alt="Hover Image" class="hover-image">
+</div>
+
+<div class="image-container" onclick="window.location.href='https://freakins.com/products/product-url-5'">
+  <img src="https://freakins.com/cdn/shop/files/11may_3088-Edit.jpg?v=1750059993&width=700" alt="Default Image" class="default-image">
+  <img src="https://freakins.com/cdn/shop/files/11may_3096.jpg?v=1750059993&width=700" alt="Hover Image" class="hover-image">
+</div>
+</div>
+<br><br><br>
+<div class="collab"><h1>INFLUENCER COLLAB</h1></div>
+
+ <div class="fade-slider">
+    <img src="https://freakins.com/cdn/shop/files/14_fc934c93-ab08-4c92-88f7-d3d6694e14b5.jpg?v=1727335885" class="fade-image active" alt="Image 1" />
+    <img src="https://freakins.com/cdn/shop/files/Copy_of_Friday_-_2024-07-31T174002.971.jpg?v=1722428111" class="fade-image" alt="Image 2" />
+    <img src="https://freakins.com/cdn/shop/files/Copy_of_Friday_39.jpg?v=1716442076" class="fade-image" alt="Image 3" />
+  </div>
+
+  <script>
+    const fadeImages = document.querySelectorAll('.fade-slider img');
+    let fadeIndex = 0;
+
+    setInterval(() => {
+      fadeImages[fadeIndex].classList.remove('active');
+      fadeIndex = (fadeIndex + 1) % fadeImages.length;
+      fadeImages[fadeIndex].classList.add('active');
+    }, 3000);
+  </script>
+
+<br><br>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- FOLLOW US -->
+    <div class="footer-section">
+      <h4>FOLLOW US</h4>
+      <div class="social-icons">
+        <a href="#"><span>f</span></a>
+        <a href="#"><span>📷</span></a>
+      </div>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="footer-section">
+      <h4>RESOURCES</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Track your order</a></li>
+        <li><a href="#">Return / Exchange</a></li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-section">
+      <h4>QUICK LINKS</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Refund/Exchange Policy</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT US -->
+    <div class="footer-section">
+      <h4>CONTACT US</h4>
+      <p>Reach out to us on <a href="#">Whatsapp</a>!</p>
+      <p>📞 +91 8058152657</p>
+      <p>✉️ <a href="mailto:wecare@freakins.com">siddharthjoshi854@gmail.com</a></p>
+      <p>Instagram DM - <br>
+        <a href="https://www.instagram.com/freakinsindia?igsh=ZmR5eW5uNmRkcThj" target="_blank">
+          instagram.com/siddharth_j854
+        </a>
+      </p>
+      <p>Working Hours - 10AM to 6PM,<br>Mon to Sun</p>
+    </div>
+
+    <!-- STORE LOCATIONS -->
+    <div class="footer-section">
+      <h4>FREAKINS STORE</h4>
+      <p>Visit us at:</p>
+      <p>📍 <a href="#">Jaipur</a></p>
+      <p>📍 <a href="#">Bhilwara</a></p>
+    </div>
+
+    <!-- AFFILIATE -->
+    <div class="footer-section">
+      <h4>BE AN AFFILIATE</h4>
+      <a href="#">Register Here</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>@ Siddharth Joshi</p>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
