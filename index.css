@@ -17,6 +17,25 @@
   }
 
     .image-row {
+      display: flex; body {
+    margin: 20px;
+    max-width: 2000px;
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+  }
+
+.big-banner {
+    width: 1800px;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+    .image-row {
       display: flex;
       gap: 20px;
     }
@@ -465,4 +484,468 @@
   color: rgba(0, 0, 0, 0.7); /* slightly transparent black */
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* soft glow / haze */
   font-style: italic; /* keep italic */
+}
+  .logo a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; /* black background */
+    color: #fff; /* white text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .logo a:hover {
+    background-color: #444; /* slightly lighter on hover */
+  }
+      gap: 20px;
+    }
+
+
+  .image-container {
+    width: 280px;
+    height: 700px;
+    position: relative;
+    overflow: hidden; 
+
+  }
+
+  .image-container img {
+    width: 400px;
+    height: 750px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    display: block;
+  }
+
+    .image-container img.hover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    .image-container:hover img.hover-image {
+      opacity: 1;
+    }
+
+    .image-container:hover img.default-image {
+      opacity: 0;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .image-container {
+     width: 370px;
+    height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    flex-shrink: 0;
+    }
+
+    .image-container img {
+      width: 370px;
+      height: 700px;
+      gap: 5px;
+      display: block;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container img.hover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    .image-container:hover img.hover-image {
+      opacity: 1;
+    }
+
+    .image-container:hover img.default-image {
+      opacity: 0;
+    }
+
+  .image-container img {
+    width: 400px;
+    height: 750px;
+    transition: opacity 0.3s ease;
+    display: block;
+  }
+
+  .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .image-container:hover .hover-image {
+    opacity: 1;
+  }
+
+  .image-container:hover .default-image {
+    opacity: 0;
+  }
+
+ 
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .top-left {
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+  }
+
+  .top-left a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+  }
+
+  .top-left a.active {
+    border-bottom: 2px solid black;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .top-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .search-box {
+    position: relative;
+  }
+
+  .search-box input {
+    padding: 6px 30px 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+
+  .search-box button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .icon {
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+.banner-slider {
+  width: 1900px;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.banner-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+.collections{
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+ .video-row {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    overflow-x: auto; 
+    flex-wrap: wrap;  
+    justify-content: flex-start;
+  }
+
+  .video-container {
+    width: 300px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    flex-shrink: 0;
+  }
+
+  .video-container video {
+    width: 300px;
+    height: 700px;
+    object-fit: cover;
+  }
+
+   .image-slider {
+    width: 1900px; 
+    height: 750px; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0; left: 10;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  .image-slider img.active {
+    opacity: 1;
+    position: relative;
+  }
+
+  .toggle-buttons {
+      display: flex;
+      gap: 10px;
+          align-items: center;
+    justify-content: center;
+    }
+
+    .toggle-button {
+      padding: 8px 20px;
+      border-radius: 999px;
+      border: 1px solid black;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      transition: all 0.3s ease;
+    }
+
+    .toggle-button.active {
+      background-color: black;
+      color: white;
+    }
+
+    .toggle-button:hover {
+      opacity: 0.8;
+    }
+
+
+
+.fade-slider {
+      position: relative;
+      width: 2000;
+      max-width: 2000px;
+      height: 800px; 
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .fade-slider img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1850px;
+      height: 700px; 
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      z-index: 0;
+    }
+
+    .fade-slider img.active {
+      opacity: 1;
+      z-index: 1;
+    }
+.collab h1 {
+  text-align: center;
+  font-size: 28px;
+}
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 15px;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  padding: 5px 15px;
+  width: fit-content;
+}
+
+.social-icons a span {
+  font-size: 16px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.image-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.buy-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.image-container.show-buy-now .buy-now {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+  .image-container {
+    position: relative;
+    width: 400px; /* or adjust as needed */
+    cursor: pointer;
+  }
+  .default-image {
+    display: block;
+    width: 100%;
+  }
+  .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .image-container:hover .hover-image {
+    opacity: 1;
+  }
+  .buy-now {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    font-weight: bold;
+    pointer-events: none; /* prevent interfering with hover */
+  }
+  
+  .image-container:hover .buy-now {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+    .path p i {
+  color: rgba(0, 0, 0, 0.7); /* slightly transparent black */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* soft glow / haze */
+  font-style: italic; /* keep italic */
+
 }
